@@ -17,6 +17,9 @@
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
+    @media (max-width:425px){
+         width: 100%;
+    }
 
     .profileImg {
       width: 100%;
@@ -125,6 +128,9 @@
       display: flex;
       gap: 4rem;
       flex-wrap: wrap;
+      @media (max-width:425px){
+        gap: 2rem;
+      }
 
       ul {
         list-style: none;

@@ -13,6 +13,7 @@ const portfolioItems = [
     categoryLabel:
       "The Swipe Dashboard, accessible at dashboard.swipe.ai, serves as a comprehensive merchant portal designed to streamline post- purchase experiences for e-commerce businesses. It offers tools for package protection, claims management, and customer engagement, aiming to enhance customer satisfaction and trust.",
     image: "/images/mobile-app-design.png",
+     link: "https://swipe.ai",
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const portfolioItems = [
     categoryLabel:
       "Gift Portal is a customized web platform built to simplify the process of sending, tracking, and managing corporate and personal gifts. It allows users and merchants to easily place orders, track delivery, and manage claims—all in a branded, user-friendly interface",
     image: "/images/mobile-app-design.png",
+     link: "https://dashboard.swipe.ai",
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const portfolioItems = [
     category: "branding",
     categoryLabel: "The Smart Society Dashboard is a centralized platform designed to streamline and digitize society and apartment management. It provides an intuitive interface for admins, residents, and committee members to manage everyday operations efficiently.",
     image: "/images/mobile-app-design.png",
+     link: "https://my-smartsociety.com/",
   },
 ];
 
@@ -36,7 +39,6 @@ const categories = [
   { id: "design", label: "Design" },
   { id: "game", label: "Game" },
   { id: "branding", label: "Branding" },
-  { id: "marketing", label: "Marketing" },
 ];
 
 export default function CreativePortfolio() {
@@ -52,10 +54,10 @@ export default function CreativePortfolio() {
       <div className={styles.container}>
         <div className={styles.header}>
           <span className={styles.subtitle}>WORKS</span>
-          <h2 className={styles.title}>Creative Portfolio</h2>
+          <h2 className={styles.title}>Project Highlights</h2>
         </div>
 
-        <div className={styles.filters}>
+        {/* <div className={styles.filters}>
           {categories.map((category) => (
             <button
               key={category.id}
@@ -67,20 +69,28 @@ export default function CreativePortfolio() {
               {category.label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className={styles.grid}>
-          {filteredItems.map((item) => (
-            <div key={item.id} className={styles.portfolioItem}>
-  <div className={styles.content}>
-    <h3 className={styles.itemTitle}>{item.title}</h3>
-    <span className={styles.category}>{item.categoryLabel}</span>
-  </div>
-  <div className={styles.redirectIcon}>
-     <FaArrowRight />{/* You can use an icon here like an SVG or Lucide/FontAwesome */}
-  </div>
-</div>
-          ))}
+         {portfolioItems.map((item) => {
+          console.log(item)
+  return (
+    <div key={item.id} className={styles.portfolioItem} onClick={() => window.open(item.link, "_blank")}>
+      <div className={styles.content}>
+        <h3 className={styles.itemTitle}>{item.title}</h3>
+        <span className={styles.category}>{item.categoryLabel}</span>
+      </div>
+      <div
+        className={styles.redirectIcon}
+        
+      >
+        <FaArrowRight />
+      </div>
+    </div>
+  );
+})}
+
+          
         </div>
       </div>
     </section>

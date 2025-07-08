@@ -24,13 +24,13 @@ const About = () => {
           Available for Work <span className={styles.dot}></span>
         </div>
         <div className={styles.socials}>
-          <a
+          {/* <a
             href="https://www.facebook.com/yourprofile"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaFacebookF />
-          </a>
+          </a> */}
           <a
             href="https://www.linkedin.com/in/deep-hanani-658897246"
             target="_blank"
@@ -50,7 +50,7 @@ const About = () => {
 
       <div className={styles.content}>
         <h1>
-          Hello, I’m Deep Hanani sir,
+          Hello, I’m Deep Hanani,
           <br />
           <span className={styles.highlight}>
             Software Engineer | React Developer
