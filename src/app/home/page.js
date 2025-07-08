@@ -7,6 +7,7 @@ import Resume from '../resume/page';
 import ContactSection from '../contactsection/page';
 import CreativePortfolio from '../portfolioItems/page';
 import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaCode } from "react-icons/fa";
 const Hero = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,7 +31,7 @@ const Hero = () => {
       <header className={styles.header}>
         <div className={styles.logo}>
           {/* <img src={my_log.src} alt='my_log' className={styles.logoImg}/> */}
-          KANE
+          <FaCode />
         </div>
 
         {/* Mobile Drawer */}
@@ -61,7 +62,7 @@ const Hero = () => {
       {/* Intro Section */}
       <div className={styles.introSection}>
         <h1>
-          IM <span className={styles.outline}>DEEP</span> SIR HANANI
+          IM <span className={styles.outline}>DEEP</span> HANANI
         </h1>
         <div className={styles.roles}>
           <span>React Developer</span>

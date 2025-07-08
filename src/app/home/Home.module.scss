@@ -16,7 +16,12 @@
     .logo {
       font-weight: bold;
       font-size: 1.2rem;
-      color: #38536d;
+     font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #38536d;
+    padding: 11px 12px 6px 12px;
+    border-radius: 50%;
       
     }
   
@@ -57,7 +62,7 @@
   
     .menuIcon {
       display: none;
-      font-size: 1.5rem;
+          font-size: 29px;
       color: #38536d;
       cursor: pointer;
     }
