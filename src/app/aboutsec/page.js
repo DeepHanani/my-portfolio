@@ -1,16 +1,10 @@
 import React from "react";
 import styles from "./About.module.scss";
-import profileImg from '../../../assets/creative_image.png'; // Replace with your image
-import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaGithub,
-  FaDownload,
-} from "react-icons/fa";
+import profileImg from "../../../assets/creative_image.png";
+import { FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const About = () => {
-  console.log(profileImg)
   return (
     <section className={styles.aboutSection}>
       <div className={styles.card}>
@@ -24,13 +18,6 @@ const About = () => {
           Available for Work <span className={styles.dot}></span>
         </div>
         <div className={styles.socials}>
-          {/* <a
-            href="https://www.facebook.com/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebookF />
-          </a> */}
           <a
             href="https://www.linkedin.com/in/deep-hanani-658897246"
             target="_blank"
@@ -58,11 +45,11 @@ const About = () => {
           and Web Designer
         </h1>
 
-        <a href="/Deep_Hanani_Resume (1).pdf" download>
-  <button className={styles.cvButton}>
-    Download CV <FaDownload />
-  </button>
-</a>
+        <a href="/Deep_Hanani_Resume_React.js_2Years.pdf" download>
+          <button className={styles.cvButton}>
+            Download CV <FaDownload />
+          </button>
+        </a>
 
         <div className={styles.skills}>
           <ul>

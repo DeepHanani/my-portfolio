@@ -119,7 +119,7 @@ const ContactSection = () => {
 
       <footer className={styles.footer}>
         <p>
-          Copyright ©2023, <span>D.H. Portfolio.</span> All Rights Reserved.
+          Copyright ©2025, <span>D.H. Portfolio.</span> All Rights Reserved.
         </p>
       </footer>
     </section>
