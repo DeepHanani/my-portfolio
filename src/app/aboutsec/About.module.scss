@@ -2,14 +2,18 @@
   display: flex;
   gap: 4rem;
   padding: 4rem 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   flex-wrap: wrap;
   width: 70%;
-    margin: auto;
-     @media (max-width: 425px) {
-        width: 90%;
-      }
+  margin: auto;
+  @media (max-width: 425px) {
+    width: 90%;
+  }
+   @media (max-width: 1010px) {
+    width: 96%;
+    margin: auto 20px;
+  }
 
   .card {
     width: 320px;
@@ -17,8 +21,8 @@
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
-    @media (max-width:425px){
-         width: 100%;
+    @media (max-width: 425px) {
+      width: 100%;
     }
 
     .profileImg {
@@ -27,14 +31,13 @@
       border-radius: 10px;
       object-fit: cover;
       margin-bottom: 1.5rem;
-      
     }
 
     h2 {
       font-size: 1.5rem;
       font-weight: 500;
       margin: 0.8rem 0;
-          color: #000000;
+      color: #000000;
     }
 
     .status {
@@ -58,42 +61,41 @@
     }
 
     .socials {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
 
-  svg {
-    font-size: 2rem;
-    padding: 0.6rem;
+      svg {
+        font-size: 2rem;
+        padding: 0.6rem;
         background: #38536d;
 
-    color: #fff; // ensure visible
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 0.3s ease;
+        color: #fff; // ensure visible
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s ease;
 
-    &:hover {
-      background: #000;
-      color: #fff;
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
     }
-  }
-}
-
   }
 
   .content {
     flex: 1;
     @media (max-width: 768px) {
-       min-width: 0px;
-      }
+      min-width: 0px;
+    }
 
     h1 {
       font-size: 2.5rem;
       font-weight: 500;
       color: #1e1e1e;
       line-height: 1.5;
-       @media (max-width: 768px) {
+      @media (max-width: 768px) {
         font-size: 29px;
       }
 
@@ -105,7 +107,7 @@
     }
 
     .cvButton {
-         background: #38536d;
+      background: #38536d;
       color: #fff;
       padding: 0.9rem 1.6rem;
       border: none;
@@ -128,7 +130,7 @@
       display: flex;
       gap: 4rem;
       flex-wrap: wrap;
-      @media (max-width:425px){
+      @media (max-width: 425px) {
         gap: 2rem;
       }
 
