@@ -1,0 +1,83 @@
+.resumeSection {
+  background-color: #38536d;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.resumeHeader {
+  text-align: center;
+  margin-bottom: 60px;
+
+  p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+
+.resumeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.resumeColumn {
+  border-radius: 12px;
+  box-shadow: 0 0 0 1px #dbe0e5;
+  padding: 2rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+
+  .resumeCard + .resumeCard {
+    border-top: 1px solid #dbe0e5;
+    margin-top: 1.8rem;
+    padding-top: 1.8rem;
+  }
+}
+
+.resumeCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .iconBox {
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #111;
+    flex-shrink: 0;
+  }
+
+  .year {
+    font-size: 0.85rem;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+}
