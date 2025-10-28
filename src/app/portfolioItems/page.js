@@ -53,7 +53,7 @@ export default function CreativePortfolio() {
     <section className={styles.portfolio}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <span className={styles.subtitle}>WORKS</span>
+          <span className={styles.subtitle}>WORKSs</span>
           <h2 className={styles.title}>Project Highlights</h2>
         </div>
 

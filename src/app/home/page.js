@@ -62,7 +62,7 @@ const Hero = () => {
       {/* Intro Section */}
       <div className={styles.introSection}>
         <h1>
-          IM <span className={styles.outline}>DEEP</span> HANANI
+          IM <span className={styles.outline}>DEEPs</span> HANANIs
         </h1>
         <div className={styles.roles}>
           <span>React Developer</span>
